@@ -16,6 +16,10 @@ const ArtSchema = new mongoose.Schema(
     description: {
         type: String,
         required: true,
+    },
+    genre: {
+        type: String,
+        required: true,
     }
     
   },
