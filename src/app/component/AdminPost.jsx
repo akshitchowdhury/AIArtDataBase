@@ -47,15 +47,14 @@ const AdminPost = () => {
           <label htmlFor="imageurl" className="block text-sm font-medium text-gray-700">
             Image URL
           </label>
-          <input
-            type="text"
-            id="imageurl"
-            className="mt-1 block w-full
-            h-52 border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500"
-            value={imageurl}
-            onChange={(e) => setImageUrl(e.target.value)}
-            required
-          />
+          <textarea
+  id="imageurl"
+  className="mt-1 block w-full h-52 border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500"
+  value={imageurl}
+  onChange={(e) => setImageUrl(e.target.value)}
+  required
+/>
+
         </div>
         <div>
           <label htmlFor="title" className="block text-sm font-medium text-gray-700">
