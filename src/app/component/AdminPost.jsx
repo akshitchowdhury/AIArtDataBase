@@ -28,6 +28,7 @@ const AdminPost = () => {
         setDescription('');
         setGenre('');
         alert('Art item posted successfully!');
+        window.location.reload()
       } else {
         alert('Failed to post art item:', data.error);
       }

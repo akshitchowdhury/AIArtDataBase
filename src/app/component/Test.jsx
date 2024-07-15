@@ -11,7 +11,7 @@ const Test = () => {
   useEffect(() => {
     const fetchArts = async () => {
       try {
-        const response = await fetch('/api/getAllImages');
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/getAllImages`);
         const data = await response.json();
         if (data.success) {
           setArts(data.data);
@@ -30,7 +30,7 @@ const Test = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`/api/deleteImage?id=${id}`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/deleteImage?id=${id}`, {
         method: 'DELETE',
       });
 
