@@ -13,6 +13,8 @@ const Test = () => {
       try {
         const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/getAllImages`);
         const data = await response.json();
+        console.log(data)
+
         if (data.success) {
           setArts(data.data);
         } else {
