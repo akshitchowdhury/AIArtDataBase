@@ -12,7 +12,7 @@ const AdminPost = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('/api/post', {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/post`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
